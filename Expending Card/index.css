@@ -37,8 +37,9 @@
 #cards>#container>.pannel.active{
     flex: 5;
 }
-#cards>#container>.pannel.active>h3{
+#cards>#container>.pannel.active>.innerText{
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 #item1{
     background-image: url("https://images.pexels.com/photos/7931271/pexels-photo-7931271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -57,4 +58,13 @@
 }
 #item6{
     background-image: url("https://images.pexels.com/photos/2431436/pexels-photo-2431436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+@media only screen and (max-width:700px){
+    .container{
+        width: 100vw;
+    }
+    .pannel:nth-of-type(4),.pannel:nth-of-type(5){
+        display: none;
+    }
 }
