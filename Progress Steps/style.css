@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 40rem;
+}
+
+.progress{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(226, 139, 25, 0.726);
+    height: 2px;
+    width: 50%;
+    z-index: -1;
+    transition: 0.4s ;
+}
+
+.circle{
+    background-color: white;
+    border: 2px solid rgba(127, 129, 131, 0.445);
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
